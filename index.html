@@ -1,29 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>App Legal Documents</title>
-<style>
-  body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 700px; margin: 60px auto; padding: 0 20px; color: #222; line-height: 1.6; }
-  h1 { font-size: 1.6rem; }
-  ul { padding-left: 1.2rem; }
-  a { color: #0a66c2; text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .app-block { margin-bottom: 1.5rem; }
-</style>
-</head>
-<body>
-  <h1>Legal Documents</h1>
-  <p>Privacy policies and terms &amp; conditions for apps published under this domain.</p>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <div class="app-block">
-    <h2>Happy Health Ladies Fitness</h2>
-    <ul>
-      <li><a href="/happy-health-ladies-fitness/privacy-policy.html">Privacy Policy</a></li>
-      <li><a href="/happy-health-ladies-fitness/terms-and-conditions.html">Terms and Conditions</a></li>
-    </ul>
-  </div>
+    <title>Legal Documents | Christo Johnson</title>
+
+    <meta name="description"
+          content="Privacy policies, terms and conditions, and legal documents for applications published under this domain.">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                         Helvetica, Arial, sans-serif;
+            background: #f7f7f8;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+
+        header {
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            margin: 0 0 12px;
+            font-size: 32px;
+            line-height: 1.2;
+        }
+
+        .intro {
+            margin: 0;
+            color: #666;
+            font-size: 16px;
+        }
+
+        .app {
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .app h2 {
+            margin: 0 0 18px;
+            font-size: 21px;
+        }
+
+        .documents {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .documents a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .documents a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #ddd;
+            color: #777;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 18px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .app {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<main class="container">
+
+    <header>
+        <h1>Legal Documents</h1>
+
+        <p class="intro">
+            Privacy policies, terms and conditions, and other legal information
+            for applications published under this domain.
+        </p>
+    </header>
+
+    <section class="app">
+        <h2>Happy Health Ladies Fitness</h2>
+
+        <nav class="documents" aria-label="Happy Health Ladies Fitness legal documents">
+            <a href="/happy-health-ladies-fitness/privacy-policy.html">
+                Privacy Policy
+            </a>
+
+            <a href="/happy-health-ladies-fitness/terms-and-conditions.html">
+                Terms and Conditions
+            </a>
+
+            <a href="/happy-health-ladies-fitness/community-guidelines.html">
+                Community Guidelines
+            </a>
+
+            <a href="/happy-health-ladies-fitness/medical-disclaimer.html">
+                Fitness &amp; Medical Disclaimer
+            </a>
+
+            <a href="/happy-health-ladies-fitness/support.html">
+                Support
+            </a>
+        </nav>
+    </section>
+
+    <footer>
+        <p>
+            © 2026 Christo Johnson. All rights reserved.
+        </p>
+    </footer>
+
+</main>
 
 </body>
 </html>
