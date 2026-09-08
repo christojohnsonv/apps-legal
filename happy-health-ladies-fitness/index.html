@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 
 <title>Happy Health Ladies Fitness | Legal Documents</title>
 
@@ -45,9 +43,11 @@
         color: #2563eb;
         text-decoration: none;
         font-size: 14px;
+        transition: color 0.15s ease;
     }
 
     .back:hover {
+        color: #1d4ed8;
         text-decoration: underline;
     }
 
@@ -55,6 +55,7 @@
         margin: 0 0 12px;
         color: #111;
         font-size: 32px;
+        letter-spacing: -0.02em;
     }
 
     .intro {
@@ -62,19 +63,36 @@
         color: #666;
     }
 
+    .section-label {
+        margin: 32px 0 10px;
+        color: #999;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+    }
+
+    .section-label:first-of-type {
+        margin-top: 0;
+    }
+
     .documents {
         background: #fff;
         border: 1px solid #e5e5e7;
         border-radius: 12px;
         overflow: hidden;
+        box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
     }
 
     .document {
-        display: block;
+        display: flex;
+        align-items: center;
+        gap: 16px;
         padding: 20px 24px;
         color: #222;
         text-decoration: none;
         border-bottom: 1px solid #e5e5e7;
+        transition: background 0.15s ease;
     }
 
     .document:last-child {
@@ -83,6 +101,24 @@
 
     .document:hover {
         background: #f5f7ff;
+    }
+
+    .document-icon {
+        flex-shrink: 0;
+        width: 36px;
+        height: 36px;
+        border-radius: 9px;
+        background: #eef2ff;
+        color: #2563eb;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+    }
+
+    .document-body {
+        flex: 1;
+        min-width: 0;
     }
 
     .document-title {
@@ -98,6 +134,25 @@
         font-size: 14px;
     }
 
+    .document-arrow {
+        flex-shrink: 0;
+        color: #c3c3c8;
+        font-size: 18px;
+    }
+
+    .document.danger:hover {
+        background: #fef2f2;
+    }
+
+    .document.danger .document-icon {
+        background: #fee2e2;
+        color: #dc2626;
+    }
+
+    .document.danger .document-title {
+        color: #dc2626;
+    }
+
     footer {
         margin-top: 40px;
         padding-top: 24px;
@@ -107,13 +162,11 @@
     }
 </style>
 
-
 </head>
 
 <body>
 
 <main class="container">
-
 
 <a class="back" href="/">
     ← All Applications
@@ -126,46 +179,84 @@
     application.
 </p>
 
+<p class="section-label">Policies</p>
 <section class="documents">
 
     <a class="document" href="privacy-policy.html">
-        <p class="document-title">Privacy Policy</p>
-        <p class="document-description">
-            Information about how the application collects, uses,
-            stores, and protects user information.
-        </p>
+        <span class="document-icon">🔒</span>
+        <span class="document-body">
+            <p class="document-title">Privacy Policy</p>
+            <p class="document-description">
+                Information about how the application collects, uses,
+                stores, and protects user information.
+            </p>
+        </span>
+        <span class="document-arrow">›</span>
     </a>
 
     <a class="document" href="terms-and-conditions.html">
-        <p class="document-title">Terms and Conditions</p>
-        <p class="document-description">
-            Terms governing the use of the Happy Health Ladies Fitness
-            application and its services.
-        </p>
+        <span class="document-icon">📄</span>
+        <span class="document-body">
+            <p class="document-title">Terms and Conditions</p>
+            <p class="document-description">
+                Terms governing the use of the Happy Health Ladies Fitness
+                application and its services.
+            </p>
+        </span>
+        <span class="document-arrow">›</span>
     </a>
 
     <a class="document" href="community-guidelines.html">
-        <p class="document-title">Community Guidelines</p>
-        <p class="document-description">
-            Guidelines for communication and interaction within the
-            application.
-        </p>
+        <span class="document-icon">💬</span>
+        <span class="document-body">
+            <p class="document-title">Community Guidelines</p>
+            <p class="document-description">
+                Guidelines for communication and interaction within the
+                application.
+            </p>
+        </span>
+        <span class="document-arrow">›</span>
     </a>
 
     <a class="document" href="fitness-medical-disclaimer.html">
-        <p class="document-title">Fitness &amp; Medical Disclaimer</p>
-        <p class="document-description">
-            Important information regarding fitness activities and
-            limitations of the application's content.
-        </p>
+        <span class="document-icon">⚕️</span>
+        <span class="document-body">
+            <p class="document-title">Fitness &amp; Medical Disclaimer</p>
+            <p class="document-description">
+                Important information regarding fitness activities and
+                limitations of the application's content.
+            </p>
+        </span>
+        <span class="document-arrow">›</span>
     </a>
 
+</section>
+
+<p class="section-label">Account &amp; Support</p>
+<section class="documents">
+
     <a class="document" href="support.html">
-        <p class="document-title">Support</p>
-        <p class="document-description">
-            Support information and contact details for users of the
-            application.
-        </p>
+        <span class="document-icon">🛟</span>
+        <span class="document-body">
+            <p class="document-title">Support</p>
+            <p class="document-description">
+                Support information and contact details for users of the
+                application.
+            </p>
+        </span>
+        <span class="document-arrow">›</span>
+    </a>
+
+    <a class="document danger" href="delete-account.html">
+        <span class="document-icon">🗑️</span>
+        <span class="document-body">
+            <p class="document-title">Delete Account</p>
+            <p class="document-description">
+                How to request deletion of your account and what happens
+                to your data.
+            </p>
+        </span>
+        <span class="document-arrow">›</span>
     </a>
 
 </section>
@@ -173,7 +264,6 @@
 <footer>
     &copy; 2026 Christo Johnson. All rights reserved.
 </footer>
-
 
 </main>
 
